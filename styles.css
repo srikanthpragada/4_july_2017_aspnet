@@ -1,0 +1,14 @@
+﻿body {
+    font-family: Verdana;
+    font-size: 12pt;
+}
+
+h1 {
+    font-family: Arial;
+    color: blue;
+}
+
+li {
+    font-weight: bold;
+    color: red;
+}
