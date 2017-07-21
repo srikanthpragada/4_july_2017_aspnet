@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" %>
+﻿<%@ Page Language="C#"  %>
 <%@ Import Namespace="System.IO" %>
 <!DOCTYPE html>
 
@@ -14,6 +14,7 @@
         }
         output += "</ul";
         lblPhotos.Text = output;
+        Trace.Write("My text in trace!");
     }
 </script>
 

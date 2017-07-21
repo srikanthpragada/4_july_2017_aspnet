@@ -1,9 +1,6 @@
-﻿<%@ Page Language="C#" %>
-
-<!DOCTYPE html>
+﻿<%@ Page Title="Page1" Language="C#" MasterPageFile="~/MasterPage.master" %>
 
 <script runat="server">
-
     protected void btnUpload_Click(object sender, EventArgs e)
     {
         if (!FileUpload1.HasFile)
@@ -18,15 +15,12 @@
     }
 </script>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-  <title>Add Photo</title>
-</head>
-<body>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
   <form id="form1" runat="server">
     Select Photo : <asp:FileUpload ID="FileUpload1" runat="server" />
     <p></p>
       <asp:Button ID="btnUpload" runat="server" Text="Upload" OnClick="btnUpload_Click" />
   </form>
-</body>
-</html>
+
+</asp:Content>
