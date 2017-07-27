@@ -7,8 +7,7 @@
 
     protected void btnUpdate_Click(object sender, EventArgs e)
     {
-        SqlConnection con = new SqlConnection
-             (@"data source=(localdb)\MsSqlLocalDb;integrated security=true;initial catalog=msdb");
+        SqlConnection con = new SqlConnection(Database.ConnectionString);
         con.Open();
         SqlCommand cmd = new SqlCommand("update products set price =" + txtNewPrice.Text +
                    " where prodid = " + txtProdid.Text, con);
